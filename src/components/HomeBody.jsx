@@ -1,21 +1,7 @@
 import React, { useState } from 'react' 
 import { AiOutlineSearch } from 'react-icons/ai'
 import { NavLink } from 'react-router-dom'
-import {FigmaIpsum,LoremIpsum, OfficeIpsum, PizzaIpsum,PotterIpsum,} from "../assets"
 import Card from './Card'
-
-/*
-*  *  *
-
-Here, there are 2 types of cards, 
-  1) Defined by user
-  2) Predefined by us
-
-Due to this, the time ordering is only working on one type, the predefined ones.
-It can easily be applied on the user defined cards as well, but not on both of them at the same time.
-
-*  *  *
-*/
 
 function HomeBody() {
   const [active, setActive] = useState("1");
@@ -30,24 +16,7 @@ function HomeBody() {
       setincreasing(false);
     }
   }
-
-// Using Predefined values for all cards which are not added to the localStorage.
-  let preDefinded = [    
-  /*   {"name":"Lorem Ipsum", "img":LoremIpsum, 
-    "desc":"Lorem ipsum dolor sit amet consectetur. Auctor nibh eleifend tempus egestas libero tristique nec.",  
-    "date": Date.parse("2023-03-02T13:53:26.416Z")},  
-    {"name":"Potter Ipsum", "img":PotterIpsum, 
-    "desc":"Potter ipsum wand elf parchment wingardium. Ghost glass hall tears hair must train. Snape alohamora bathrooms..",  
-    "date": Date.parse("2023-03-13T18:53:26.416Z")},    
-    {"name":"Pizza Ipsum", "img":PizzaIpsum, 
-    "desc":"Pizza ipsum dolor meat lovers buffalo. Burnt melted NY.",  
-    "date": Date.parse("2023-03-14T19:53:26.416Z")},
-    {"name":"Figma Ipsum", "img":FigmaIpsum, 
-    "desc":"Figma ipsum component variant main layer. Blur hand object thumbnail subtract flows font bold image. Font.",  
-    "date": Date.parse("2023-03-15T12:53:26.416Z")},    
-    {"name":"Office Ipsum", "img":OfficeIpsum, 
-    "desc":"Office ipsum you must be muted.",  
-    "date": Date.parse("2023-03-16T11:53:26.416Z")} */] 
+  let preDefinded = [] 
 
 
   return (

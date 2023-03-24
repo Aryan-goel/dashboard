@@ -9,9 +9,7 @@ import Delete from './Delete';
 function HackathonHead(title) {
   const [buttonpopup, setbuttonpopup] = useState(false)
   const [favourite, setFavourite] = useState(false);
-  
-  // We have not used useEffect for this block as useEffect takes some time to load 
-  // and there was no need to spend time on that.
+
   var curObj;
   const obj=JSON.parse(window.localStorage.getItem('Hackathons'))
   for(var i = 0; i < obj.length; i++){
