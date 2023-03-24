@@ -6,7 +6,7 @@ import 'reactjs-popup/dist/index.css';
 import Delete from './Delete';
 
 
-function ContestHead(title) {
+function HackathonHead(title) {
   const [buttonpopup, setbuttonpopup] = useState(false)
   const [favourite, setFavourite] = useState(false);
   
@@ -77,4 +77,4 @@ function ContestHead(title) {
   )
 }
 
-export default ContestHead
+export default HackathonHead

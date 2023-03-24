@@ -1,7 +1,7 @@
 import React from 'react'
 import { AiOutlineLink, AiFillGithub, AiFillCalendar } from 'react-icons/ai'
 
-function ContestBody(title) {
+function HackathonBody(title) {
   var curObj;
 
   const obj=JSON.parse(window.localStorage.getItem('Hackathons'))
@@ -33,4 +33,4 @@ function ContestBody(title) {
   )
 }
 
-export default ContestBody
+export default HackathonBody;
